@@ -9,23 +9,21 @@
 </head>
 
 <body class="bg-[#FFFAF3] flex flex-col items-center min-h-screen font-[poppins]">
-  <div class="flex flex-col flex-grow items-center mb-20">  
+  <div class="flex flex-col flex-grow items-center mb-20">
     <div class="bg-[url(../images/background.jpg)] bg-cover w-full bg-no-repeat bg-center">
       <div class="bg-[rgb(0,0,0,0.2)] w-full flex flex-col items-center bg-no-repeat">
         <nav
-          class="flex flex-row items-center justify-between bg-[#FFE4C4] my-6 mx-3 py-4 
-          px-8 rounded-[24px] gap-10 w-[85%] shadow-[0px_0px_20px_rgba(0,0,0,0.3)]">
+          class="flex flex-row items-center justify-between bg-[#FFE4C4] mt-6 mx-3 py-4 px-8 rounded-[24px] gap-10 w-[85%] shadow-[0px_0px_20px_rgba(0,0,0,0.3)]">
           <a href="index.html" class="text-5xl text-[#FF6200] font-bold">Logo</a>
 
-          <div class="flex flex-col gap-2 min-[970px]:hidden">
+          <button id="menu-btn" class="flex flex-col gap-2 min-[970px]:hidden">
             <div class="h-[4px] w-[32px] bg-[#FF6200]"></div>
             <div class="h-[4px] w-[32px] bg-[#FF6200]"></div>
             <div class="h-[4px] w-[32px] bg-[#FF6200]"></div>
-          </div>
+          </button>
 
           <div
-            class="hidden flex-row items-center justify-around bg-[#FFF4E5] text-[18px] 
-            py-2.5 px-6 gap-10 rounded-[16px] font-medium min-w-[50%] min-[970px]:flex">
+            class="hidden flex-row items-center justify-around bg-[#FFF4E5] text-[18px] py-2.5 px-6 gap-10 rounded-[16px] font-medium min-w-[50%] min-[970px]:flex">
             <a href="index.html" class="hover:text-[#FF6200]">Home</a>
             <a href="" class="hover:text-[#FF6200]">Projects</a>
             <a href="" class="hover:text-[#FF6200]">Portfolio</a>
@@ -33,82 +31,90 @@
           </div>
 
           <a href="login.html"
-            class="hidden bg-[#FFA323] text-[17px] font-medium py-2.5 px-4 rounded-[16px] 
-            border-[1.5px] border-[#FFA323] hover:border-black hover:text-[#FFF4E5] 
-            min-[970px]:flex">Login</a>
+            class="hidden bg-[#FFA323] text-[17px] font-medium py-2.5 px-4 rounded-[16px] border-[1.5px] border-[#FFA323] hover:border-black hover:text-[#FFF4E5] min-[970px]:flex">Login</a>
         </nav>
+        <!-- Mobile Menu -->
+        <div class="self-end min-[970px]:hidden">
+          <div id="menu"
+            class="hidden absolute top-20 right-18 flex-col items-center rounded-[24px] py-8 px-16 space-y-6 font-bold bg-[#FFFAF3] drop-shadow-md">
+            <a href="index.html" class="hover:text-[#FF6200]">Home</a>
+            <a href="" class="hover:text-[#FF6200]">Projects</a>
+            <a href="" class="hover:text-[#FF6200]">Portfolio</a>
+            <a href="" class="hover:text-[#FF6200]">Place Order</a>
+            <a href="login.html"
+              class="bg-[#FFA323] text-[17px] font-medium py-2.5 px-4 rounded-[16px] border-[1.5px] border-[#FFA323] hover:border-black hover:text-[#FFF4E5] min-[970px]:flex">Login</a>
+          </div>
+        </div>
 
         <section id="hero" class="flex flex-col items-center mt-50 mb-60 min-[530px]:items-center">
-          <p class="w-[90%] text-center font-bold text-[450%] text-[#FF6200] bg-[rgb(0,0,0,0.3)] rounded-[16px] 
-          py-3 px-6 min-[900px]:w-fit min-[600px]:text-8xl">
+          <p
+            class="w-[90%] text-center font-bold text-[450%] text-[#FF6200] bg-[rgb(0,0,0,0.3)] rounded-[16px] py-3 px-6 min-[900px]:w-fit min-[600px]:text-8xl">
             I'm Sajid Zaman
           </p>
-          <p class="text-center font-bold text-[120%] text-[#FF6200] bg-[rgb(0,0,0,0.3)] rounded-b-[8px] 
-          px-6 min-[530px]:px-3 min-[600px]:text-3xl min-[900px]:w-fit">
+          <p
+            class="text-center font-bold text-[120%] text-[#FF6200] bg-[rgb(0,0,0,0.3)] rounded-b-[8px] px-6 min-[530px]:px-3 min-[600px]:text-3xl min-[900px]:w-fit">
             A Full Stack Developer
           </p>
         </section>
       </div>
     </div>
 
-    <section id="aboutSection" class="flex flex-col justify-center items-center mt-6 mb-10 
-    gap-20 max-w-[80%] min-[970px]:flex-row">
+    <section id="aboutSection"
+      class="flex flex-col justify-center items-center mt-6 mb-10 gap-20 max-w-[80%] min-[970px]:flex-row">
       <div class="flex flex-col items-center min-[970px]:max-w-[50%] min-[970px]:items-start">
         <p class="font-medium text-3xl text-[#FF6200]">About</p>
 
         <div class="w-[88px] h-[3px] bg-[#FF6200] mt-[4px]"></div>
 
         <p class="mt-4 text-[20px] text-center min-[970px]:text-start">
-          I'm Sajid Zaman, a Full Stack Developer. I am currently studying Computer Science
-          and engineering at United Internation University, Dhaka, Bangladesh.Lorem ipsum 
-          dolor, sit amet consectetur adipisicing elit. Fugit laudantium omnis fugiat 
-          consectetur debitis ad, numquam dolorum, ipsum sint nesciunt neque
+          I'm Sajid Zaman, a Full Stack Developer. I'm currently studying
+          Computer Science and Engineering at United Internation University,
+          Dhaka, Bangladesh.
         </p>
       </div>
 
-      <div class="flex flex-row flex-wrap items-center justify-evenly max-w-[90%] text-[18px] 
-      font-medium gap-10 min-[970px]:gap-10 min-[970px]:max-w-[50%] min-[970px]:mt-6">
+      <div
+        class="flex flex-row flex-wrap items-center justify-evenly max-w-[90%] text-[18px] font-medium gap-10 min-[970px]:gap-10 min-[970px]:max-w-[50%] min-[970px]:mt-6">
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-2">
-          <img src="./images/htmlLogo.png" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/htmlLogo.png" alt="" class="h-[40px] w-[40px]" />
           <p>HTML</p>
         </div>
 
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-3">
-          <img src="./images/cssLogo.png" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/cssLogo.png" alt="" class="h-[40px] w-[40px]" />
           <p>CSS</p>
         </div>
 
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-3">
-          <img src="./images/tailwindmark.svg" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/tailwindmark.svg" alt="" class="h-[40px] w-[40px]" />
           <p>Tailwind</p>
         </div>
 
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-3">
-          <img src="./images/reactjsLogo.png" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/reactjsLogo.png" alt="" class="h-[40px] w-[40px]" />
           <p>React.js</p>
         </div>
 
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-3">
-          <img src="./images/nodejs.png" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/nodejs.png" alt="" class="h-[40px] w-[40px]" />
           <p>Node.js</p>
         </div>
 
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-3">
-          <img src="./images/sqlLogo.png" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/sqlLogo.png" alt="" class="h-[40px] w-[40px]" />
           <p>SQL</p>
         </div>
 
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-3">
-          <img src="./images/mongodbLogo.png" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/mongodbLogo.png" alt="" class="h-[40px] w-[40px]" />
           <p>MongoDB</p>
         </div>
 
         <div class="flex flex-row items-center justify-start min-w-[120px] max-w-[120px] gap-3">
-          <img src="./images/figmaLogo.png" alt="" class="h-[40px] w-[40px]">
+          <img src="./images/figmaLogo.png" alt="" class="h-[40px] w-[40px]" />
           <p>Figma</p>
         </div>
       </div>
-      
     </section>
 
     <section id="projectSection" class="flex flex-col items-center mt-6 mx-6">
@@ -118,36 +124,31 @@
 
       <div class="flex flex-row flex-wrap items-center justify-center mt-7 gap-8">
         <a href=""
-          class="flex flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] 
-          text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200]">
+          class="flex flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200]">
           <img src="./images/moderna.webp" alt="" class="w-[368px]" />
           <p>moderna.com</p>
         </a>
 
         <a href=""
-          class="flex flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] 
-          text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200]">
+          class="flex flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200]">
           <img src="./images/moderna.webp" alt="" class="w-[368px]" />
           <p>moderna.com</p>
         </a>
 
         <a href=""
-          class="flex flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] 
-          text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200]">
+          class="flex flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200]">
           <img src="./images/moderna.webp" alt="" class="w-[368px]" />
           <p>moderna.com</p>
         </a>
 
         <a href=""
-          class="hidden flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] 
-          text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200] min-[970px]:flex">
+          class="hidden flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200] min-[970px]:flex">
           <img src="./images/moderna.webp" alt="" class="w-[368px]" />
           <p>moderna.com</p>
         </a>
 
         <a href=""
-          class="hidden flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] 
-          text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200] min-[970px]:flex">
+          class="hidden flex-col items-center gap-3 bg-[#FFE4C4] p-4 shadow-[0px_0px_20px_rgb(0,0,0,0.3)] text-[#FF6200] font-medium border-[2px] border-[#FFE4C4] hover:border-[#FF6200] min-[970px]:flex">
           <img src="./images/moderna.webp" alt="" class="w-[368px]" />
           <p>moderna.com</p>
         </a>
@@ -157,11 +158,11 @@
 
   <footer id="footer" class="bg-[#FFE4C4] w-full mt-auto">
     <div class="flex flex-col items-center justify-center my-8">
-        <p class="text-[#FF6200] font-medium">
-            Developed by Sajid Zaman
-        </p>
+      <p class="text-[#FF6200] font-medium">Developed by Sajid Zaman</p>
     </div>
-</footer>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
