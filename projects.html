@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Login</title>
+  </head>
+
+  <body
+    class="bg-[#FFFAF3] min-h-screen flex flex-col items-center font-[poppins]"
+  >
+    <nav
+      class="flex flex-row items-center justify-between bg-[#FFE4C4] mt-6 mx-3 
+      py-4 px-8 rounded-[24px] gap-10 w-[85%] shadow-[0px_0px_20px_rgba(0,0,0,0.3)]"
+    >
+      <a href="index.html" class="text-5xl text-[#FF6200] font-bold">Logo</a>
+
+      <button id="menu-btn" class="flex flex-col gap-2 min-[970px]:hidden">
+        <div class="h-[4px] w-[32px] bg-[#FF6200]"></div>
+        <div class="h-[4px] w-[32px] bg-[#FF6200]"></div>
+        <div class="h-[4px] w-[32px] bg-[#FF6200]"></div>
+      </button>
+
+      <div
+        class="hidden flex-row items-center justify-around bg-[#FFF4E5] text-[18px] 
+        py-2.5 px-6 gap-10 rounded-[16px] font-medium min-w-[50%] min-[970px]:flex"
+      >
+        <a href="index.html" class="hover:text-[#FF6200]">Home</a>
+        <a href="projects.html" class="hover:text-[#FF6200]">Projects</a>
+        <a href="resume.html" class="hover:text-[#FF6200]">Resume</a>
+        <a href="placeOrder.html" class="hover:text-[#FF6200]">Place Order</a>
+      </div>
+
+      <a
+        href="login.html"
+        class="hidden bg-[#FFA323] text-[17px] font-medium py-2.5 px-4 rounded-[16px] 
+        border-[1.5px] border-[#FFA323] hover:border-black hover:text-[#FFF4E5] 
+        min-[970px]:flex"
+        >Login</a
+      >
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="self-end min-[970px]:hidden">
+      <div
+        id="menu"
+        class="hidden absolute top-20 right-18 flex-col items-center rounded-[24px] py-8 
+        px-16 space-y-6 font-bold bg-[#FFFAF3] drop-shadow-md"
+      >
+        <a href="index.html" class="hover:text-[#FF6200]">Home</a>
+        <a href="projects.html" class="hover:text-[#FF6200]">Projects</a>
+        <a href="resume.html" class="hover:text-[#FF6200]">Resume</a>
+        <a href="placeOrder.html" class="hover:text-[#FF6200]">Place Order</a>
+        <a
+          href="login.html"
+          class="bg-[#FFA323] text-[17px] font-medium py-2.5 px-4 rounded-[16px] 
+          border-[1.5px] border-[#FFA323] hover:border-black hover:text-[#FFF4E5] 
+          min-[970px]:flex"
+          >Login</a
+        >
+      </div>
+    </div>
+
+    <section id="projects">
+        <div class="flex flex-col items-center space-y-[32px] mt-8 mb-24 min-[970px]:mb-32">
+            <div class="flex flex-col items-center space-y-2">
+                <p class="text-2xl text-[#FF6200] font-semibold">
+                    Projects
+                </p>
+                <div class="h-[3px] w-[80px] bg-[#FF6200]"></div>
+            </div>
+
+            <div class="flex flex-col items-center space-y-8">
+                <a href="" class="bg-[#FFE4C4] flex flex-col items-center
+                justify-center border-3 border-[#ffd39d] p-4 space-y-5
+                shadow-[0px_0px_15px_rgb(0,0,0,0.2)] hover:border-[#FF6200]
+                min-[970px]:flex-row min-[970px]:min-w-[950px] min-[970px]:items-start 
+                min-[970px]:justify-start min-[970px]:space-x-8 min-[970px]:space-y-0 
+                max-[970px]:size-100">
+                    <img src="/images/moderna.webp" alt="" class="w-[400px] h-[300px]">
+
+                    <div class="flex flex-col space-y-1 self-start">
+                        <p class="text-2xl text-[#FF6200] font-medium">moderna.com</p>
+                        <div class="h-[3px] w-[170px] bg-[#FF6200]"></div>
+                        <p>This is a basic description of the project.</p>
+                    </div>
+                </a>
+
+                <a href="" class="bg-[#FFE4C4] flex flex-col items-center
+                justify-center border-3 border-[#ffd39d] p-4 space-y-5
+                shadow-[0px_0px_15px_rgb(0,0,0,0.2)] hover:border-[#FF6200]
+                min-[970px]:flex-row min-[970px]:min-w-[950px] min-[970px]:items-start 
+                min-[970px]:justify-start min-[970px]:space-x-8 min-[970px]:space-y-0 
+                max-[970px]:size-100">
+                    <img src="/images/moderna.webp" alt="" class="w-[400px] h-[300px]">
+
+                    <div class="flex flex-col space-y-1 self-start">
+                        <p class="text-2xl text-[#FF6200] font-medium">moderna.com</p>
+                        <div class="h-[3px] w-[170px] bg-[#FF6200]"></div>
+                        <p>This is a basic description of the project.</p>
+                    </div>
+                </a>
+
+                <a href="" class="bg-[#FFE4C4] flex flex-col items-center
+                justify-center border-3 border-[#ffd39d] p-4 space-y-5
+                shadow-[0px_0px_15px_rgb(0,0,0,0.2)] hover:border-[#FF6200]
+                min-[970px]:flex-row min-[970px]:min-w-[950px] min-[970px]:items-start 
+                min-[970px]:justify-start min-[970px]:space-x-8 min-[970px]:space-y-0 
+                max-[970px]:size-100">
+                    <img src="/images/moderna.webp" alt="" class="w-[400px] h-[300px]">
+
+                    <div class="flex flex-col space-y-1 self-start">
+                        <p class="text-2xl text-[#FF6200] font-medium">moderna.com</p>
+                        <div class="h-[3px] w-[170px] bg-[#FF6200]"></div>
+                        <p>This is a basic description of the project.</p>
+                    </div>
+                </a>
+
+                <a href="" class="bg-[#FFE4C4] flex flex-col items-center
+                justify-center border-3 border-[#ffd39d] p-4 space-y-5
+                shadow-[0px_0px_15px_rgb(0,0,0,0.2)] hover:border-[#FF6200]
+                min-[970px]:flex-row min-[970px]:min-w-[950px] min-[970px]:items-start 
+                min-[970px]:justify-start min-[970px]:space-x-8 min-[970px]:space-y-0 
+                max-[970px]:size-100">
+                    <img src="/images/moderna.webp" alt="" class="w-[400px] h-[300px]">
+
+                    <div class="flex flex-col space-y-1 self-start">
+                        <p class="text-2xl text-[#FF6200] font-medium">moderna.com</p>
+                        <div class="h-[3px] w-[170px] bg-[#FF6200]"></div>
+                        <p>This is a basic description of the project.</p>
+                    </div>
+                </a>
+
+                <a href="" class="bg-[#FFE4C4] flex flex-col items-center
+                justify-center border-3 border-[#ffd39d] p-4 space-y-5
+                shadow-[0px_0px_15px_rgb(0,0,0,0.2)] hover:border-[#FF6200]
+                min-[970px]:flex-row min-[970px]:min-w-[950px] min-[970px]:items-start 
+                min-[970px]:justify-start min-[970px]:space-x-8 min-[970px]:space-y-0 
+                max-[970px]:size-100">
+                    <img src="/images/moderna.webp" alt="" class="w-[400px] h-[300px]">
+
+                    <div class="flex flex-col space-y-1 self-start">
+                        <p class="text-2xl text-[#FF6200] font-medium">moderna.com</p>
+                        <div class="h-[3px] w-[170px] bg-[#FF6200]"></div>
+                        <p>This is a basic description of the project.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-[#FFE4C4] w-full mt-auto">
+      <div class="flex flex-col items-center justify-center my-8">
+        <p class="text-[#FF6200] font-medium">Developed by Sajid Zaman</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
