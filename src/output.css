@@ -236,6 +236,9 @@
     width: 368px;
     height: 368px;
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
   .h-\[3px\] {
     height: 3px;
   }
@@ -310,6 +313,9 @@
   }
   .w-\[400px\] {
     width: 400px;
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;
