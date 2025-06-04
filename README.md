@@ -1,7 +1,7 @@
 # Basic Portfolio
 Basic Portfolio with html and tailwind css. The website is designed with responsiveness in mind. So it provides a seamless experience in both larger displays and smaller displays<br>
 # Live Server 
-<b>Link:</b> [sajidzamanme.github.io/](https://sajidzamanme.github.io/)
+<b>Link:</b> https://sajidzamanme.github.io/basic-portfolio/
 
 # Screenshots:
 <b>Home Page:</b>
